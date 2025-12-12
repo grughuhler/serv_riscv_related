@@ -1,0 +1,4 @@
+This repository contain projects relating to the SERV RISC-V soft core
+on FPGAs.
+
+servant_gowin: servant example SoC using Gowin FPGA tools

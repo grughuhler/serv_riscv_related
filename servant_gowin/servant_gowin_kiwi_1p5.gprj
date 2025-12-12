@@ -1,0 +1,40 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1N-1P5C" pn="GW1N-UV1P5QN48XFC7/I6">gw1n1p5c-020</Device>
+    <FileList>
+        <File path="src/gowin_pllo_1p5/gowin_pllo_1p5.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pllo_clkgen.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_aligner.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_alu.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_bufreg.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_bufreg2.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_compdec.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_csr.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_debug.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_decode.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_immdec.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_mem_if.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_rf_if.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_rf_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_rf_ram_if.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_rf_top.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_state.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_synth_wrapper.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/rtl/serv_top.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servant/servant.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servant/servant_gpio.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servant/servant_mux.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servant/servant_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servant/servant_timer.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servile/servile.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servile/servile_arbiter.v" type="file.verilog" enable="1"/>
+        <File path="src/serv/servile/servile_mux.v" type="file.verilog" enable="1"/>
+        <File path="src/servant_kiwi_1p5.v" type="file.verilog" enable="1"/>
+        <File path="src/servant_gowin_kiwi_1p5.cst" type="file.cst" enable="1"/>
+        <File path="src/servant_gowin_kiwi_1p5.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
