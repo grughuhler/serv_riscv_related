@@ -42,12 +42,12 @@ See also YouTube videos:
 
 Getting started with Kiwi 1P5 FPGA Board: https://youtu.be/d1sUu9FITxE
 
-Video about SERV on Gowin:
+Video about SERV on Gowin: https://youtu.be/DiAKcmnP3cU
 
 Using Linux
 
-The Gowin tools work with less trouble on Windows.  Here are some notes
-on Ubuntu 24.04.5.  Your experience many vary.
+The Gowin tools work with much less trouble on Windows.  Here are some
+notes on Ubuntu 24.04.5.  Your experience many vary.
 
 Copy system libfontconfig to ./lib or was that libfreetype...
 
@@ -70,3 +70,8 @@ But might be best to build the lastest from source.
 Create /etc/udev/rules.d/98-ftdi_9k.rules containing the line:
 ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", RUN+="/sbin/modprobe ftdi_sio"
 
+For serial port on Kiwi 1P5 (expect /dev/ttyUSBx):
+  sudo modprobe usbserial vendor=0x33aa product=0x0020
+
+The Gowin programmer can work but appears to conflict with loading the
+ftdi_sio module for serial port access.  I suggest openfpgaloader.
