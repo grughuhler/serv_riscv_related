@@ -1,4 +1,11 @@
 This repository contain projects relating to the SERV RISC-V soft core
 on FPGAs.
 
-servant_gowin: servant example SoC using Gowin FPGA tools
+servant_gowin: servant example SoC using Gowin FPGA tools.  Supporting
+               boards OneKiwi Kiwi-1P5, Tang Nano 9K, Tang Nano 20k.
+
+serving_proj: serving example SoC (uses one memory for SRAM + register
+              file) plus peripherals from servant.  Supporting only
+	      OneKiwi Kiwi-1P5, but other boards would be easy to add.
+
+See READMEs within directories.

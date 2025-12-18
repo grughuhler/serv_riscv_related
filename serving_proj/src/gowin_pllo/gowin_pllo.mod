@@ -1,0 +1,36 @@
+-series GW1N
+-device GW1N-1P5
+-device_version C
+-package QFN48XF
+-part_number GW1N-UV1P5QN48XFC7/I6
+
+
+-mod_name Gowin_PLLO
+-file_name gowin_pllo
+-path C:/Users/spamt/Documents/gowin_projects/serving_proj/src/gowin_pllo/
+-type PLLO
+-file_type vlg
+-dyn_dpa_en true
+-clock_en false
+-rst_sig true
+-rst_sig_p false
+-rst_sig_i false
+-fclkin 27
+-dyn_idiv_sel false
+-idiv_sel 5
+-clkfb_sel 0
+-dyn_fbdiv_sel false
+-fbdiv_sel 6
+-en_lock true
+-clkouta_bypass false
+-dyn_odiva_sel false
+-odiva_sel 13
+-dyn_dta_sel false
+-clkouta_dt_dir 1
+-clkouta_dt_step 0
+-en_clkoutb false
+-clkb_in_sel 2'b11
+-en_clkoutc false
+-clkc_in_sel 2'b11
+-en_clkoutd false
+-clkd_in_sel 2'b11

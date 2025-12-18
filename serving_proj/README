@@ -1,0 +1,21 @@
+This directory contains a Gowin FPGA tools project (serving_proj.gprj)
+for the OneKiwi Kiwi 1P5 FPGA development board.
+
+The project is based on serv: https://github.com/olofk/serv and contains
+files from commit f141df190c15d116cc8e71fc4000e28e101a2629 of this
+repo.
+
+It runs a sample SoC that is the "serving" SoC with the GPIO
+controller and timer from the "servant" SoC.  The difference between
+serving and servant is that the former uses a single inferred SRAM
+(probably implemented using BSRAM) for both SoC SRAM and the core's
+register file.  This improves resource usage a little on FPGAs that
+have only 4 BSRAMs.
+
+To run, build using the Gowin Tools and use the Gowin programmer to
+load the sample SoC onto the FPGA.  LED2 should blink.
+
+Directory c_code contains a sample program (that blinks the LED).  See
+the README there.
+
+The Verilog top level is in src/serving_kiwi_1p5.v.
